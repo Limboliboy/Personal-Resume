@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>刘少央的简历</title>
+	<style type="text/css">
+		* {
+			margin:0; 
+			padding: 0;
+			font-family: sans-serif; 
+		}
+		.briefInfo_li:hover, .objective_li:hover {
+			transform: scale(1.1);
+		}
+		span:hover {
+			color: red;
+		}
+		.briefInfo {
+			background-color: lightgray; 
+			padding: 20px 0px;	
+			overflow: hidden;
+		}
+		#photo,#desc {
+			float: left;
+			margin-left: 20px;
+		}
+		#photo {
+			height: 200px;
+			width: auto;
+		}
+		#briefDesc {
+			margin-top: 10px;
+		}
+		.absolute {
+			background-color: black;
+			color: white;
+			position: absolute;
+			width: 10%;
+			border-radius: 5px;
+			padding: 0px;
+			left: 20px;
+			padding: 5px;
+			text-align: center;
+		}
+		#objectiveTitle {
+			top: 230px;
+		}
+		#workExperienceTitle {
+			top: 365px;
+		}
+		#campusExperienceTitle {
+			top: 675px;
+		}
+		#selfAssessmentTitle {
+			top: 975px;
+		}
+		#objective_ul {
+			display: flex;
+			justify-content: space-around;
+			padding: 20px 0px; 
+		}
+		#briefInfo_ul {
+			display: flex;
+			padding-left: 20px; 
+		}
+		#briefInfo_flex1 {
+			width: 250px;
+			height: auto;
+		}
+		.briefInfo_h4 {
+			display: inline-block;
+		}
+		.workExperience,.campusExperience,.selfAssessment {
+			padding-bottom: 20px; 
+		}
+		#workExperience_ul,#campusExperience_ul,#selfAssessment_ul {
+			padding-top: 40px;
+			padding-left: 60px;
+		}
+		#workExperienceDesc_ul,#campusExperienceDesc_ul {
+			padding-top: 10px; 
+			padding-left: 20px;
+		}
+		.briefInfo_li,.workExperienceDesc_li,.campusExperienceDesc_li,.selfAssessment_li,.campusExperienceDesc_p {
+			margin-top: 5px; 
+		}
+		.block {
+			background-color: lightgray;
+			height: 40px;
+		}
+		#workExperience_h2,#campusExperience_h2 {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		#reasonOfTurnover {
+			display: inline-block;
+			margin-top: 10px; 
+			width: auto;
+			border-bottom: 2px solid black;
+		}
+		.selfAssessment_li {
+			list-style: none;
+		}
+		#footer {
+			height: 50px;
+			line-height: 20px;
+			background-color: gray;
+			text-align: center;
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			padding: 5px 0 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="briefInfo">
+		<img src="http://dmimg.5054399.com/allimg/pkm/pmkbs/10.jpg" alt="卡比兽头像" id="photo">
+		<div id="desc">
+			<h1>我的简历</h1>
+			<p id="briefDesc">
+				985、211院校2019届毕业生，第一份工作任职于无锡尚思源教育科技有限公司质检部，6个月程序功能测试经验，转行前端自学中。
+			</p>
+			<ul id="briefInfo_ul">
+				<div id="briefInfo_flex1">
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">姓名：</h4>刘少央</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">年龄：</h4>23</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">毕业院系：</h4>电子科技大学</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">手机：</h4>13125279959</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">籍贯：</h4>江西</li>
+				</div>
+				<div id="briefInfo_flex2">
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">性别：</h4>男</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">学历：</h4>本科</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">专业：</h4>计算机学院数字媒体技术</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">邮箱：</h4>1265780779@qq.com</li>
+					<li class="briefInfo_li"><h4 class="briefInfo_h4">外语：</h4>CET6 505</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<div class="absolute" id="objectiveTitle">
+		<h2>求职意向</h2>
+	</div>
+	<div class="objective">
+		<ul id="objective_ul">
+			<li class="objective_li">
+				<div>
+					<h2>期望行业</h2>
+					互联网，教育
+				</div>
+			</li >
+			<li class="objective_li">
+				<div>
+					<h2>期望职位</h2>
+					前端实习
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="block"></div>
+	<div class="absolute" id="workExperienceTitle">
+		<h2>工作经历</h2>
+	</div>
+	<div class="workExperience">
+		<ul id="workExperience_ul">
+			<li class="workExperience_li">
+				<h2 id="workExperience_h2">无锡尚思源教育科技有限公司——DueApe留学生课业辅导平台</h2>（2019.07~2020.01）
+				<h3 id="workExperience_h3">质检部 税前月薪：8K</h3>
+				<ul id="workExperienceDesc_ul">
+					<li class="workExperienceDesc_li">检查导师提交的代码是否符合订单要求，测试程序的功能性、完整性、正确性，熟悉C、C++、C#、python、Java、Matlab、R、Julia、Haskell等程序的环境与测试</li>
+					<li class="workExperienceDesc_li">分析订单不及格原因，划分平台、导师、学生三方责任</li>
+					<li class="workExperienceDesc_li">阅读英文材料，分析订单要求，协助教务寻找合适的导师接单</li>
+					<li class="workExperienceDesc_li">观看并评价应聘导师试讲视频，给平台输送高质量导师</li>
+				</ul>
+				<span id="reasonOfTurnover">离职原因：公司业务淡季，质检部并非核心业务部门，惨遭裁员毒手</span>
+			</li>
+		</ul>
+	</div>
+	<div class="block"></div>
+	<div class="absolute" id="campusExperienceTitle">
+		<h2>校园经历</h2>
+	</div>
+	<div class="campusExperience">
+		<ul id="campusExperience_ul">
+			<li class="campusExperience_li">
+				<h2 id="campusExperience_h2">电子科技大学2019届毕业生</h2>（2015.09~2019.06）
+				<h3>计算机科学与工程学院 数字媒体技术</h3>
+				<ul id="campusExperienceDesc_ul">
+					<li class="campusExperienceDesc_li">
+						<h4>计算机学院 曦光支教队</h4>
+						<p class="campusExperienceDesc_p">
+							大一担任副队长，与<span>南京师范大学</span>合作建立<span>曦光支教队</span>，2015年7月前往四川省成都市青白江区三元村、南岳村进行为期两周的支教活动。校内竞选荣获<span>“优秀支教队”</span>,个人获校级优秀社会实践。
+						</p>
+					</li>
+					<li class="campusExperienceDesc_li">
+						<h4>计算机学院 绿丝带志愿者服务队</h4>
+						<p class="campusExperienceDesc_p">
+							大二担任副队长，辅助队长管理20人志愿者队。与校图书馆、成都地铁、顺江小区、成都SOS儿童村建立合作关系，定期开展校内外志愿活动。校内竞选荣获<span>“最受欢迎的志愿队”</span>，个人获百佳青年志愿者。
+						</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="block"></div>
+	<div class="absolute" id="selfAssessmentTitle">
+		<h2>自我评价</h2>
+	</div>
+	<div class="selfAssessment">
+		<ul id="selfAssessment_ul">
+			<li class="selfAssessment_li">
+				<p class="selfAssessment_p">
+					我这一生犯过很多错误，越长大犯的越多。大学里没有珍惜时光、没有大胆表白、没有迎着学习困难坚定向前，上一份工作中没有居安思危。所幸的是我还有一些宝贵的经历、珍贵的朋友，帮助我这个后知后觉的人成长。
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div class="block"></div>
+	<div id="footer">
+		感谢您的浏览！<br />
+		本页面由我目前自学的有限的html+css知识完成
+	</div>
+</body>
+</html>
