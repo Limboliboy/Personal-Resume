@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>刘少央的简历</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		* {
 			margin:0; 
@@ -34,25 +35,40 @@
 			background-color: black;
 			color: white;
 			position: absolute;
-			width: 10%;
-			border-radius: 5px;
-			padding: 0px;
-			left: 20px;
-			padding: 5px;
 			text-align: center;
 		}
-		#objectiveTitle {
-			top: 230px;
+		@media screen and (min-width: 961px) {
+			.absolute {
+				width: 10%;
+				border-radius: 5px;
+				padding: 0px;
+				left: 20px;
+				padding: 5px;
+			}
 		}
-		#workExperienceTitle {
-			top: 365px;
+		@media screen and (max-width: 960px) and (min-width: 641px) {
+			.absolute {
+				width: 15%;
+				border-radius: 5px;
+				padding: 0px;
+				left: 10px;
+			}
 		}
-		#campusExperienceTitle {
-			top: 675px;
+		@media screen and (min-width: 1920px){
+			#objectiveTitle {
+				top: 23.5%;
+			}
+			#workExperienceTitle {
+				top: 37%;
+			}
+			#campusExperienceTitle {
+				top: 69%;
+			}
+			#selfAssessmentTitle {
+				top: 108.5%;
+			}
 		}
-		#selfAssessmentTitle {
-			top: 975px;
-		}
+
 		#objective_ul {
 			display: flex;
 			justify-content: space-around;
@@ -168,9 +184,9 @@
 				<h2 id="workExperience_h2">无锡尚思源教育科技有限公司——DueApe留学生课业辅导平台</h2>（2019.07~2020.01）
 				<h3 id="workExperience_h3">质检部</h3>
 				<ul id="workExperienceDesc_ul">
-					<li class="workExperienceDesc_li">检查导师提交的代码是否符合订单要求，测试程序的功能性、完整性、正确性，熟悉C、C++、C#、python、Java、Matlab、R、Julia、Haskell等程序的环境与测试，提高项目质量</li>
-					<li class="workExperienceDesc_li">分析订单不及格原因，划分平台、导师、学生三方责任，降低退单率</li>
-					<li class="workExperienceDesc_li">阅读英文材料，分析订单要求，协助教务寻找合适的导师接单，提高成单率</li>
+					<li class="workExperienceDesc_li">检查导师提交的代码是否符合订单要求，测试程序的功能性、完整性、正确性，熟悉C、C++、C#、python、Java、Matlab、R、Julia、Haskell等程序的环境与测试</li>
+					<li class="workExperienceDesc_li">分析订单不及格原因，划分平台、导师、学生三方责任</li>
+					<li class="workExperienceDesc_li">阅读英文材料，分析订单要求，协助教务寻找合适的导师接单</li>
 					<li class="workExperienceDesc_li">观看并评价应聘导师试讲视频，给平台输送高质量导师</li>
 				</ul>
 				<span id="reasonOfTurnover">离职原因：公司业务淡季裁员</span>
@@ -199,26 +215,38 @@
 							大二担任副队长，辅助队长管理20人志愿者队。与校图书馆、成都地铁、顺江小区、成都SOS儿童村建立合作关系，定期开展校内外志愿活动。校内竞选荣获<span>“最受欢迎的志愿队”</span>，个人获百佳青年志愿者。
 						</p>
 					</li>
+					<li class="campusExperienceDesc_li">
+						<h4>触控科技有限公司 暑期实习</h4>
+						<p class="campusExperienceDesc_p">
+							学习Unity3D，制作海战游戏。玩家驾驶舰艇在海上航行，攻击敌舰，规定时间内生存或歼灭敌人获胜。个人负责UI与场景搭建，小组通过考核。
+						</p>
+					</li>
+					<li class="campusExperienceDesc_li">
+						<h4>三维植被场景漫游 毕设</h4>
+						<p class="campusExperienceDesc_p">
+							学习OpenGL图形库，制作包含树木花草、丘陵、天空、飞机、湖泊等动静物体的三维场景，支持第一人称视角漫游，毕设通过考核。
+						</p>
+					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
 	<div class="block"></div>
 	<div class="absolute" id="selfAssessmentTitle">
-		<h2>写给自己</h2>
+		<h2>自我评价</h2>
 	</div>
 	<div class="selfAssessment">
 		<ul id="selfAssessment_ul">
 			<li class="selfAssessment_li">
 				<p class="selfAssessment_p">
-					我这一生犯过很多错误，越长大犯的越多，所幸的是我还有一些宝贵的经历、珍贵的朋友，帮助我这个后知后觉的人成长。
+					我这一生犯过很多错误，越长大犯的越多。所幸的是我还有一些宝贵的经历、珍贵的朋友，帮助我这个后知后觉的人成长。
 				</p>
 			</li>
 		</ul>
 	</div>
 	<div class="block"></div>
 	<div id="footer">
-		感谢您的浏览，疫情期间注意防护，中国加油！
+		感谢您的浏览！疫情期间，注意防护，中国加油！
 	</div>
 </body>
 </html>
